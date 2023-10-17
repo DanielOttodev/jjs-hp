@@ -44,6 +44,53 @@ Responsive CSS
 ============*/
 /* Variables */
 
+
+.stickyFooter{
+  display:none;
+}
+.footer-btn{
+  border-radius: 100px;
+  box-shadow: none;
+  min-height: 40px;
+  padding: 12px 24px;
+  white-space: nowrap;
+  min-width: auto;
+  background-color: var(--primary);
+  color:black;
+  font-weight:bold;
+}
+@media screen and (max-width:575px){
+  .stickyFooter{
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 44, 44);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+    opacity: 1;
+    transition: bottom 0.5s ease-out 0s, opacity 0.5s ease 0s;
+  }
+}
+
+@media screen and (max-width:450px){
+  .sec-btn{
+    width:100%;
+    margin-left:0px;
+
+
+  }
+}
+
+.trialText{
+  margin-left:40px;
+  font-size:12px; 
+  font-style:italic;
+  text-align: center;
+}
 .youtubeVideo{
   border-radius: 15px;
   z-index:5;
@@ -357,6 +404,7 @@ p {
     transition: all ease 0.5s;
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
 .sec-btn:hover {
@@ -1998,7 +2046,7 @@ p {
 
 .about-text-box {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 30px;
 }
@@ -6295,7 +6343,7 @@ section.main-video {
 }
 
 .pricing-box {
-  margin: 0 15px;
+  margin: 0px;
 }
 
 .main-appointment {
@@ -6746,7 +6794,7 @@ section.main-video {
 
 .progress-wrap {
   right: 40px;
-  bottom: 30px;
+  bottom: 100px;
 }
 
 .main-banner::before {
@@ -6894,11 +6942,17 @@ section.main-video {
 }
 }
 
+
 @media screen and (max-width: 375px) {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-}
+}}
+@media screen and (max-width: 375px) {
+  .pricing-container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
 .banner-breadcum {
   padding: 10px 25px;
