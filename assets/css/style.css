@@ -6343,7 +6343,7 @@ section.main-video {
 }
 
 .pricing-box {
-  margin: 0 15px;
+  margin: 0px;
 }
 
 .main-appointment {
@@ -6942,11 +6942,17 @@ section.main-video {
 }
 }
 
+
 @media screen and (max-width: 375px) {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-}
+}}
+@media screen and (max-width: 375px) {
+  .pricing-container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
 .banner-breadcum {
   padding: 10px 25px;

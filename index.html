@@ -202,7 +202,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="#contact" class="sec-btn">START 14 DAY FREE TRIAL NOW</a>   
+                                <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=e5aee686b317488a8ac433b57493a46a " class="sec-btn">START 14 DAY FREE TRIAL NOW</a>   
                                 <p class="trialText">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
                             </div>
                                  
@@ -287,18 +287,21 @@
                         </button>
                       </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" style="flex-direction: column; justify-content:center;display:flex;">
                     <div style="display:flex;justify-content:center;flex-direction:column;">
                         <a target="_blank" href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=e5aee686b317488a8ac433b57493a46a" class="sec-btn">START 14 DAY FREE TRIAL NOW</a>   
                         <p style="font-size:12px; font-style:italic;text-align: center;">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
                     </div>
                     <div style="display:flex;justify-content:center;flex-direction:column;">
-                        <a href="#contact" class="sec-btn">GET STARTED</a>   
+                        <a href="#contact" class="sec-btn">GET IN TOUCH</a>   
                     </div>   
                 </div>      
                 </div>
 
             </div>
+            <div class="container">
+
+          
             <div class="row  mt-10" id="counter">
                 <div class="col-lg-4">
                     <div class="class-box wow fadeInUp" data-wow-delay=".5s">
@@ -445,6 +448,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <!--Classes End-->
 
@@ -466,7 +470,7 @@
 
     <!--Pricing Start-->
     <section class="main-pricing">
-        <div class="container">
+        <div class="container pricing-container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="pricing-title">
@@ -517,6 +521,8 @@
                                 </div>
                             </div>
                             <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=e5aee686b317488a8ac433b57493a46a" class="sec-btn">START 14 DAY FREE TRIAL NOW</a>
+                            <p style="font-size:12px; font-style:italic;text-align: center;">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
+
                         </div>
                     </div>
                 </div>
@@ -559,6 +565,8 @@
                                 </div>
                             </div>
                             <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=e5aee686b317488a8ac433b57493a46a" class="sec-btn">START 14 DAY FREE TRIAL NOW</a>
+                            <p style="font-size:12px; font-style:italic;text-align: center;">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
+
                         </div>
                     </div>
                 </div>
@@ -800,10 +808,10 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-box">
-                                        <select type="text" name="source" class="form-input" style="color:gray;" placeholder="Which plan are you interested in?">
-                                            <option value="" disable selected>Which Plan Are You Interested In?</option>
-                                            <option style="color:black;" value="Basic">Basic</option>
-                                            <option style="color:black;" value="Premium">Premium</option>
+                                        <select id="planUpdate" style="color:gray;" type="text" name="source" class="form-input" placeholder="Which plan are you interested in?">
+                                            <option value="na" disable selected>Which plan are you interested in?</option>
+                                            <option style="color:#131830;" value="Basic">Basic</option>
+                                            <option style="color:#131830;" value="PRO">PRO</option>
                                         </select>
                                     </div>
                                 </div>
@@ -925,7 +933,7 @@
      <!---Sticky Mobile Footer-->
      <div class="stickyFooter">
         <div style="width:50%;display:flex;justify-content:center;padding-left:5px;padding-right: 16px;">
-            <p style="color:white;overflow-wrap: break-word;font-size:16px;line-height:1.4;">Membership starts from just $10/month</p>
+            <p style="color:white;overflow-wrap: break-word;font-size:16px;line-height:1.4; margin-top:10px;">Enter discount code <span style="font-weight: bold; font-size:18px;">JJSTRIAL</span></p>
         </div>
         <div style="width:50%;display:flex;justify-content:center;">
             <a target="_blank" href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=e5aee686b317488a8ac433b57493a46a" class="footer-btn" >START FREE TRIAL</a>
@@ -965,6 +973,11 @@
 <script src="assets/js/back-to-top.js"></script>
 <!--Readmore buttons-->
 <script src="assets/js/readmore.js"></script>
-
+<script>
+    document.getElementById('planUpdate').addEventListener('change',(e) => {
+        console.log(e);
+        e.target.style.color = "#131830";
+    })
+</script>
 </body>
 </html>
