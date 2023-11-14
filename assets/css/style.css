@@ -806,12 +806,11 @@ p {
 
 /*==========Header CSS Start==========*/
 .site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 100;
     transition: 0.3s;
+    background-color: #282828;
+    height:200px;
 }
 
 .header-top {
@@ -5940,6 +5939,9 @@ section.main-video {
   padding: 0;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
   transition: none;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .header-bottom {
