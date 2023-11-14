@@ -44,6 +44,12 @@ Responsive CSS
 ============*/
 /* Variables */
 
+.placeholder{
+  border-radius:5px;
+  width:500px;
+  height:auto;
+}
+
 
 .stickyFooter{
   display:none;
