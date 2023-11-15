@@ -2855,6 +2855,19 @@ section.main-video {
   list-style: none;
   text-decoration: none;
 }
+.pricing-point-c ul {
+
+  margin-bottom: 0;
+  list-style: none;
+  text-decoration: none;
+
+}
+.pricing-point-c ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  text-align: center;
+}
 
 .pricing-point ul li {
   display: flex;
