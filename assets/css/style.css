@@ -44,13 +44,27 @@ Responsive CSS
 ============*/
 /* Variables */
 
+@media screen and (max-width:575px) {
+  footer{
+    margin-bottom:70px;
+  }
+}
+
+
 .placeholder{
   border-radius:5px;
   width:500px;
   height:auto;
 }
 
-
+@media screen and (max-width:575px) {
+  .placeholder{
+    width:200px;
+  }
+}
+.tw{
+  color:white !important;
+}
 .stickyFooter{
   display:none;
 }
@@ -149,7 +163,9 @@ Responsive CSS
   --accent: #f0f760;
 }
 
-
+.social-icon:hover{
+  color:#D4DE26;
+}
 
 .readMoreLink{
   color:gray;
@@ -815,8 +831,16 @@ p {
     width: 100%;
     z-index: 100;
     transition: 0.3s;
-    background-color: #282828;
-    height:200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+@media screen and (min-width:992px) {
+  .mt-lg-15{
+    margin-top:106px !important;
+  }
 }
 
 .header-top {
@@ -3651,9 +3675,6 @@ section.main-video {
   padding: 15px 0;
 }
 
-.copyright-text {
-  float: left;
-}
 
 .copyright-text span {
   margin-bottom: 0;

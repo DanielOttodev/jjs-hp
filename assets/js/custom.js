@@ -34,18 +34,18 @@ $(document).ready(function ($) {
 	// Wow Animation JS Start
 	new WOW().init();
 	// Wow Animation JS Start
-	/* Removed sticky header as per request from Jack.
-		// Sticky Header JS Start
-		$(window).on( 'scroll', function(){
-			if ($(window).scrollTop() >= 100) {
-			  $('.site-header').addClass('sticky-header');
-			 }
-			 else {
-			  $('.site-header').removeClass('sticky-header');
-			 }
-		}); 
-		// Sticky Header JS End
-	*/
+
+	// Sticky Header JS Start
+	$(window).on('scroll', function () {
+		if ($(window).scrollTop() >= 100) {
+			$('.site-header').addClass('sticky-header');
+		}
+		else {
+			$('.site-header').removeClass('sticky-header');
+		}
+	});
+	// Sticky Header JS End
+
 	// Search JS Start
 	$(".search-toggle").on("click", function () {
 		$(".search__area").addClass("opened");
