@@ -44,6 +44,11 @@ Responsive CSS
 ============*/
 /* Variables */
 
+.tm-img{
+  max-width:40px;
+  height:auto;
+}
+
 @media screen and (max-width:575px) {
   footer{
     margin-bottom:70px;
@@ -2789,7 +2794,7 @@ section.main-video {
   z-index: 0;
   position: relative;
   padding-top: 50px;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
 }
 
 .pricing-box {
@@ -3138,8 +3143,8 @@ section.main-video {
 
 /*==========Testimonial CSS Start==========*/
 .main-testimonial {
-  padding-top: 120px;
-  padding-bottom: 140px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .testimonial-title {
@@ -6368,7 +6373,7 @@ section.main-video {
 
 .main-pricing {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 
 .pricing-box {
