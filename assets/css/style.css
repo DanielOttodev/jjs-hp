@@ -44,6 +44,15 @@ Responsive CSS
 ============*/
 /* Variables */
 
+
+.steptext{
+  color:#838a03;
+  font-weight: bold;
+}
+.getStarted li{
+  padding:5px 0 5px 0;
+}
+
 .tm-img{
   max-width:40px;
   height:auto;
