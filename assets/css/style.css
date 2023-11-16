@@ -266,7 +266,7 @@ Responsive CSS
   .logo{
     margin-top:20px;
     margin-bottom:20px;
-    max-width:60px;
+    max-width:100px;
     height:auto;
   }
 
@@ -531,9 +531,9 @@ p {
 }
 
 .toggle-button {
-  position: fixed;
-  top: 10px;
-  right: 30px;
+  position: initial !important;
+ /* top: 10px;
+  right: 30px; */
   width: 60px;
   height: 60px;
   padding: 0 15px;
@@ -913,7 +913,7 @@ p {
 }
 
 .header-bottom {
-  padding: 30px 0;
+ /* padding: 0px 0; */
   background-color: transparent;
   box-shadow: none;
 }
@@ -5980,13 +5980,13 @@ section.main-video {
 @media screen and (max-width: 991px) {
 .site-header, .site-header.sticky-header {
   background: #282828;
-  height: 80px;
+  height: 120px;
   padding: 0;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
   transition: none;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: initial !important;
+ /* top: 0;
+  left: 0; */
 }
 
 .header-bottom {
@@ -6001,11 +6001,11 @@ section.main-video {
 }
 
 .site-branding {
-  position: fixed;
+ /* position: fixed;
   top: 0;
-  left: 30px;
-  width: 200px;
-  height: 70px;
+  left: 30px; */
+  width: 70px;
+  height: auto;
   display: flex;
   align-items: center;
 }
