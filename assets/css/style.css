@@ -48,6 +48,8 @@ Responsive CSS
 .steptext{
   color:#838a03;
   font-weight: bold;
+  font-size:18px;
+  margin-right: 5px;
 }
 .getStarted li{
   padding:5px 0 5px 0;
@@ -114,7 +116,7 @@ Responsive CSS
   .sec-btn{
     width:100%;
     margin-left:0px;
-
+    
 
   }
 }
@@ -1320,9 +1322,15 @@ p {
 .main-banner {
   background-color: #141b22;
   position: relative;
-  padding-top: 188px;
+  padding-top: 180px;
   width: 100%;
   z-index: 0;
+}
+
+@media screen and (max-width:575px) {
+  .main-banner{
+    padding-top: 30px;
+  }
 }
 
 .main-banner::before {
@@ -2802,7 +2810,7 @@ section.main-video {
 .main-pricing {
   z-index: 0;
   position: relative;
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 50px;
 }
 
@@ -3487,7 +3495,7 @@ section.main-video {
 /*==========Footer CSS Start==========*/
 .main-footer {
   position: relative;
-  background-color: #141b22;
+  background-color: rgb(40, 40, 40);
   padding-top: 120px;
   z-index: 0;
   overflow: hidden;
@@ -3697,7 +3705,7 @@ section.main-video {
 }
 
 .footer-copyright {
-  background-color: #050a0f;
+  background-color: rgb(40, 40, 40);
 
   padding: 15px 0;
 }
