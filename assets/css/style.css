@@ -130,7 +130,7 @@ Responsive CSS
 .youtubeVideo{
   border-radius: 15px;
   z-index:5;
-  position: relative;
+
 }
 @media screen and (min-width: 300px) {
   .youtubeVideo{
@@ -2221,10 +2221,7 @@ p {
 /*==========About Us CSS End==========*/
 
 /*==========Video CSS Start==========*/
-section.main-video {
-  position: relative;
-  margin-bottom: -260px;
-}
+
 
 .video-box {
   width: 100%;
@@ -2338,13 +2335,21 @@ section.main-video {
 
 /*==========Classes CSS Start==========*/
 .main-classes {
-  position: relative;
+
   padding-top: 380px;
   padding-bottom: 140px;
   background-color: #141b22;
   z-index: 0;
 }
 
+
+.main-video {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #141b22;
+
+}
 .dark-bg{
   background-color: #141b22;
 
