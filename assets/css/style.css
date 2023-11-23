@@ -45,6 +45,7 @@ Responsive CSS
 /* Variables */
 
 
+
 .steptext{
   color:#838a03;
   font-weight: bold;
@@ -63,6 +64,10 @@ Responsive CSS
 @media screen and (max-width:575px) {
   footer{
     margin-bottom:70px;
+  }
+  .mobile-shrink{
+    margin-top:-100px;
+    z-index:0;
   }
 }
 
@@ -244,10 +249,17 @@ Responsive CSS
 .about-img{
   margin-left:0px;
   border-radius: 30% 10% 10% 20%;
-  max-height:600px;
+  max-height:700px;
   margin-bottom:50px;
+  background-size: cover;
 }
 
+.about-sec{
+  background-image: url(/assets/images/weight-training.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height: 550px;
+}
 
 .logo{
   max-width:120px;
@@ -1327,12 +1339,25 @@ p {
   width: 100%;
   z-index: 0;
 }
+#counter{
+  background-color: #141b22;
+  color:white !important; 
+
+}
+.st{
+  font-size:28px;
+}
 
 @media screen and (max-width:575px) {
   .main-banner{
     padding-top: 30px;
   }
+  .st{
+    font-size:20px;
+  }
 }
+
+
 
 .main-banner::before {
   content: "";
@@ -1586,9 +1611,7 @@ p {
     }
 }
 
-.banner-title-one {
-  padding-bottom: 70px;
-}
+
 
 .heart-rate {
   position: absolute;
@@ -2098,7 +2121,7 @@ p {
 
 .about-text-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
 }
@@ -6345,7 +6368,7 @@ p {
 .banner-title-one, .banner-title-two {
   text-align: center;
   padding: 0 70px;
-  margin-bottom: 90px;
+ 
 }
 
 .banner-overlay-bg img {
