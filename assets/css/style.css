@@ -66,8 +66,8 @@ Responsive CSS
     margin-bottom:70px;
   }
   .mobile-shrink{
-    margin-top:-80px;
-    z-index:0;
+    margin-top:-20px;
+    z-index:-1;
   }
   .app-photo{
     width:600px !important;
@@ -242,6 +242,9 @@ Responsive CSS
 
       background-repeat: no-repeat;
       min-height:200px;
+    }
+    .no-overflow{
+      overflow-y: hidden;
     }
 }
 
@@ -1358,7 +1361,7 @@ p {
     padding-top: 30px;
   }
   .st{
-    font-size:20px;
+    font-size:14px;
   }
 }
 
@@ -5557,6 +5560,7 @@ p {
   margin-right: 15px;
 }
 }
+
 
 @media screen and (max-width: 1480px) {
 .main-banner::before {
