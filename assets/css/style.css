@@ -68,6 +68,8 @@ Responsive CSS
   height:auto;
 }
 
+
+
 @media screen and (max-width:575px) {
   footer{
     margin-bottom:70px;
@@ -77,7 +79,7 @@ Responsive CSS
     z-index:-1;
   }
   .app-photo{
-    width:600px !important;
+    width:500px !important;
     height:auto;
     margin-bottom:-30px !important;
   }
@@ -2446,7 +2448,8 @@ p {
 .class-box-title {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 8px; 
+  margin-top:8px;
 }
 
 .class-box-icon {
