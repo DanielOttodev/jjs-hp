@@ -7279,7 +7279,7 @@ p {
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
   .timeline::after {
-  left: 31px;
+  left: 18px;
   }
   
   /* Full-width containers */
