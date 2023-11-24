@@ -44,7 +44,9 @@ Responsive CSS
 ============*/
 /* Variables */
 
-
+.bg-accent{
+  background-color: rgba(203, 255, 17, 0.112);
+}
 
 .steptext{
   color:#838a03;
@@ -54,6 +56,11 @@ Responsive CSS
 }
 .getStarted li{
   padding:5px 0 5px 0;
+  list-style: none;
+}
+
+#stepList{
+  list-style: none !important;
 }
 
 .tm-img{
@@ -66,14 +73,21 @@ Responsive CSS
     margin-bottom:70px;
   }
   .mobile-shrink{
-    margin-top:-20px;
+    margin-top:-10px;
     z-index:-1;
   }
   .app-photo{
     width:600px !important;
     height:auto;
-    margin-bottom:-30px !important;
+    margin-bottom:-50px !important;
   }
+  .neg-margin{
+    margin-top:-40px !important;
+  }
+  .bg-accent-sm{
+    background-color: rgba(203, 255, 17, 0.112);
+  }
+
 }
 
 
@@ -246,6 +260,7 @@ Responsive CSS
     .no-overflow{
       overflow-y: hidden;
     }
+
 }
 
 .afl-img{
@@ -411,8 +426,6 @@ p {
     color: #10161b;
     line-height: 70px;
     font-weight: 800;
-    padding-bottom: 0px;
-    padding-top: 0px;
 }
 
 .h3-title {
@@ -7049,17 +7062,11 @@ p {
 }
 }
 
-
 @media screen and (max-width: 375px) {
 .container {
   padding-left: 15px;
   padding-right: 15px;
 }}
-@media screen and (max-width: 375px) {
-  .pricing-container {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
 
 .banner-breadcum {
   padding: 10px 25px;
