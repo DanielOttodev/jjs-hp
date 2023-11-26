@@ -87,7 +87,11 @@ Responsive CSS
     margin-top:-40px !important;
   }
   .bg-accent-sm{
-    background-color: rgba(232, 232, 232, 0.353);
+    background-color: var(--dark);
+   
+  }
+  .getStarted li p{
+    color:white !important;
   }
 
 }
@@ -2049,6 +2053,7 @@ p {
 .main-about-us {
   padding-top: 120px;
   padding-bottom: 120px;
+  z-index:0;
 }
 
 .about-img-box {
