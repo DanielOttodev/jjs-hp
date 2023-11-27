@@ -99,6 +99,13 @@ Responsive CSS
   .main-about-us{
     margin-top:-20px;
   }
+  .main-video{
+    padding-top:10px !important;
+    padding-bottom:10px !important ;
+  }
+  .main-appointment{
+    padding-top:10px !important;
+  }
 
 }
 

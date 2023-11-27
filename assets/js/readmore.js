@@ -1,8 +1,8 @@
 function showMore(num) {
     //removes the link
-    document.getElementById(`link${num}`).style.display = "none";
+    document.getElementById(`link${num}`).classList.toggle("d-none");
     //shows the #more
-    document.getElementById(`more${num}`).style.display = "block";
+    document.getElementById(`more${num}`).classList.toggle('d-none')
 
     if (num == 3) {
         let nodes = document.querySelectorAll('.break')
@@ -12,10 +12,10 @@ function showMore(num) {
     }
 }
 function showLess(num) {
-    //removes the link
-    document.getElementById(`link${num}`).style.display = "block";
-    //shows the #more
-    document.getElementById(`more${num}`).style.display = "none";
+    //shows the link
+    document.getElementById(`link${num}`).classList.toggle('d-none')
+    //removes the #more
+    document.getElementById(`more${num}`).classList.toggle('d-none')
     if (num == 3) {
         let nodes = document.querySelectorAll('.break')
         nodes.forEach((e) => {
