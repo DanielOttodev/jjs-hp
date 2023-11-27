@@ -2882,6 +2882,9 @@ p {
   position: relative;
   padding-top: 0px;
   padding-bottom: 0px;
+  max-width:1200px;
+  margin-right: auto;
+  margin-left:auto;
 }
 
 .pricing-box {
@@ -3780,7 +3783,10 @@ p {
   position: relative;
   padding: 15px 0;
 }
-
+#main-wrapper{
+  z-index:0;
+  position: relative;
+}
 
 .copyright-text span {
   margin-bottom: 0;
