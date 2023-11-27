@@ -19,30 +19,30 @@ Template Name: Fithub - Gym & Fitness HTML Template
 11.Blog Slider For Mobile JS
 =========*/
 
-$(document).ready(function($) {
+$(document).ready(function ($) {
 
 	// Whole Script Strict Mode Syntax
 	"use strict";
 
 	// Loader JS Start
-	$(window).ready(function(){
+	$(window).ready(function () {
 		$('.loader-box').fadeOut();
 		$('body').removeClass('fixed');
-   });
+	});
 	// Loader JS End
 
 	// Wow Animation JS Start
-	new WOW().init(); 
+	new WOW().init();
 	// Wow Animation JS Start
 
-    // Sticky Header JS Start
-	$(window).on( 'scroll', function(){
+	// Sticky Header JS Start
+	$(window).on('scroll', function () {
 		if ($(window).scrollTop() >= 100) {
-		  $('.site-header').addClass('sticky-header');
-		 }
-		 else {
-		  $('.site-header').removeClass('sticky-header');
-		 }
+			$('.site-header').addClass('sticky-header');
+		}
+		else {
+			$('.site-header').removeClass('sticky-header');
+		}
 	});
 	// Sticky Header JS End
 
@@ -67,41 +67,41 @@ $(document).ready(function($) {
 		autoplay: true,
 		autoplaySpeed: 2000,
 		responsive: [
-		  {
-			  breakpoint: 1200,
-			  settings: {
-				  slidesToShow: 2,
-			  }
-		  },
-		  {
-			  breakpoint: 992,
-			  settings: {
-				  slidesToShow: 2,
-			  }
-		  },
-		  {
-			  breakpoint: 768,
-			  settings: {
-				  slidesToShow: 1,
-			  }
-		  },
-		  {
-			breakpoint: 576,
-			settings: {
-				slidesToShow: 1,
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 376,
+				settings: {
+					slidesToShow: 1,
+				}
 			}
-		  },
-		  {
-			  breakpoint: 376,
-			  settings: {
-				  slidesToShow: 1,
-			  }
-		  }
-	  ]
-	  });
-	  // Class Slider JS End
+		]
+	});
+	// Class Slider JS End
 
-	  // Team Slider JS Start
+	// Team Slider JS Start
 	$('.team-slider').slick({
 		infinite: true,
 		slidesToShow: 4,
@@ -113,41 +113,41 @@ $(document).ready(function($) {
 		autoplay: true,
 		autoplaySpeed: 2000,
 		responsive: [
-		  {
-			  breakpoint: 1200,
-			  settings: {
-				  slidesToShow: 3,
-			  }
-		  },
-		  {
-			  breakpoint: 992,
-			  settings: {
-				  slidesToShow: 2,
-			  }
-		  },
-		  {
-			  breakpoint: 768,
-			  settings: {
-				  slidesToShow: 2,
-			  }
-		  },
-		  {
-			breakpoint: 576,
-			settings: {
-				slidesToShow: 1,
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 376,
+				settings: {
+					slidesToShow: 1,
+				}
 			}
-		  },
-		  {
-			  breakpoint: 376,
-			  settings: {
-				  slidesToShow: 1,
-			  }
-		  }
-	  ]
-	  });
-	  // Team Slider JS End
+		]
+	});
+	// Team Slider JS End
 
-	  // portfolio Slider JS Start
+	// portfolio Slider JS Start
 	$('.portfolio-slider').slick({
 		infinite: true,
 		slidesToShow: 4,
@@ -159,41 +159,41 @@ $(document).ready(function($) {
 		autoplay: true,
 		autoplaySpeed: 2000,
 		responsive: [
-		  {
-			  breakpoint: 1200,
-			  settings: {
-				  slidesToShow: 3,
-			  }
-		  },
-		  {
-			  breakpoint: 992,
-			  settings: {
-				  slidesToShow: 2,
-			  }
-		  },
-		  {
-			  breakpoint: 768,
-			  settings: {
-				  slidesToShow: 2,
-			  }
-		  },
-		  {
-			breakpoint: 576,
-			settings: {
-				slidesToShow: 1,
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 376,
+				settings: {
+					slidesToShow: 1,
+				}
 			}
-		  },
-		  {
-			  breakpoint: 376,
-			  settings: {
-				  slidesToShow: 1,
-			  }
-		  }
-	  ]
-	  });
-	  // Portfolio Slider JS End
+		]
+	});
+	// Portfolio Slider JS End
 
-	  // Testimonial Slider JS Start
+	// Testimonial Slider JS Start
 	$('.testimonial-slider').slick({
 		infinite: true,
 		slidesToShow: 3,
@@ -205,70 +205,70 @@ $(document).ready(function($) {
 		autoplay: true,
 		autoplaySpeed: 2000,
 		responsive: [
-		  {
-			  breakpoint: 1200,
-			  settings: {
-				  slidesToShow: 2,
-			  }
-		  },
-		  {
-			  breakpoint: 992,
-			  settings: {
-				  slidesToShow: 2,
-			  }
-		  },
-		  {
-			  breakpoint: 768,
-			  settings: {
-				  slidesToShow: 1,
-			  }
-		  },
-		  {
-			breakpoint: 576,
-			settings: {
-				slidesToShow: 1,
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 376,
+				settings: {
+					slidesToShow: 1,
+				}
 			}
-		  },
-		  {
-			  breakpoint: 376,
-			  settings: {
-				  slidesToShow: 1,
-			  }
-		  }
-	  ]
-	  });
-	  // Testimonial Slider JS End
+		]
+	});
+	// Testimonial Slider JS End
 
-	   // Toogle Menu Mobile JS Start
-	   $(".toggle-button").on('click', function() {
-        $(".main-navigation").toggleClass('toggle-menu');
-        $(".header-menu .black-shadow").fadeToggle();
-    });
-    $(".main-navigation ul li a").on('click', function() {
-        $(".main-navigation").removeClass('toggle-menu');
-        $(".header-menu .black-shadow").fadeOut();
-    });
-    $(".main-navigation ul li.sub-items>a").on('click', function() {
-        $(".main-navigation").addClass('toggle-menu');
-        $(".header-menu .black-shadow").stop();
-    });
-    $(".header-menu .black-shadow").on('click', function() {
-        $(this).fadeOut();
-        $(".main-navigation").removeClass('toggle-menu');
-    });
-    // Toogle Menu Mobile JS End
+	// Toogle Menu Mobile JS Start
+	$(".toggle-button").on('click', function () {
+		$(".main-navigation").toggleClass('toggle-menu');
+		$(".header-menu .black-shadow").fadeToggle();
+	});
+	$(".main-navigation ul li a").on('click', function () {
+		$(".main-navigation").removeClass('toggle-menu');
+		$(".header-menu .black-shadow").fadeOut();
+	});
+	$(".main-navigation ul li.sub-items>a").on('click', function () {
+		$(".main-navigation").addClass('toggle-menu');
+		$(".header-menu .black-shadow").stop();
+	});
+	$(".header-menu .black-shadow").on('click', function () {
+		$(this).fadeOut();
+		$(".main-navigation").removeClass('toggle-menu');
+	});
+	// Toogle Menu Mobile JS End
 
 	if ($(window).width() < 992) {
-        // Submenu For Mobile JS Start
-		$('body').on('click', '.main-navigation ul li.sub-items>a', function() {
-            if (($(this).parent().hasClass('active-sub-menu'))) {
-            $(this).parent().removeClass('active-sub-menu');
-            $(this).parent().find('ul').slideUp();
-            } else {
-                $(this).parent().addClass('active-sub-menu');
-                $(this).parent().find('ul').slideDown();
-            }
-        });
+		// Submenu For Mobile JS Start
+		$('body').on('click', '.main-navigation ul li.sub-items>a', function () {
+			if (($(this).parent().hasClass('active-sub-menu'))) {
+				$(this).parent().removeClass('active-sub-menu');
+				$(this).parent().find('ul').slideUp();
+			} else {
+				$(this).parent().addClass('active-sub-menu');
+				$(this).parent().find('ul').slideDown();
+			}
+		});
 		// Submenu For Mobile JS End 
 
 		// Pricing Slider For Mobile JS Start
@@ -281,25 +281,25 @@ $(document).ready(function($) {
 			dots: true,
 			arrows: false,
 			autoplay: true,
-			  autoplaySpeed: 3000,	
-			  responsive: [
-			  {
-				  breakpoint: 992,
-				  settings: {
-					  slidesToShow: 2
-				  }
-			  },
-			  {
-				  breakpoint: 768,
-				  settings: {
-					  slidesToShow: 1
-				  }
-			  }
-			]	
-		 });
-		 // Pricing Slider For Mobile JS End
+			autoplaySpeed: 3000,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+		// Pricing Slider For Mobile JS End
 
-		 // Blog Slider For Mobile JS Start
+		// Blog Slider For Mobile JS Start
 		$('.blog-slider').slick({
 			infinite: true,
 			slidesToShow: 2,
@@ -309,23 +309,23 @@ $(document).ready(function($) {
 			dots: true,
 			arrows: false,
 			autoplay: true,
-			  autoplaySpeed: 3000,	
-			  responsive: [
-			  {
-				  breakpoint: 992,
-				  settings: {
-					  slidesToShow: 2
-				  }
-			  },
-			  {
-				  breakpoint: 768,
-				  settings: {
-					  slidesToShow: 1
-				  }
-			  }
-			]	
-		 });
-		 // Blog Slider For Mobile JS End
+			autoplaySpeed: 3000,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+		// Blog Slider For Mobile JS End
 	}
 
 });
