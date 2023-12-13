@@ -26,6 +26,46 @@
     <!-- Main Style CSS  -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11392099242"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11392099242');
+  function gtag_report_conversion(url) {
+    var callback = function () {
+    if (typeof(url) != 'undefined') {
+     window.location = url;
+   }
+ };
+ gtag('event', 'conversion', {
+     'send_to': 'TAG_ID/CONVERSION_LABEL',
+     'value': 50.0,
+     'currency': 'AUD',
+    'event_callback': () => {}
+ });
+return false;
+}
+</script>
+<!-- Event snippet for Click Trial Button conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11392099242/u-shCJ2Vmv8YEKrHlrgq',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    
 <body>
 
      <!-- Loader Start -->
@@ -83,7 +123,7 @@
 
                             <div class="black-shadow"></div>
                             <div class="header-btn">
-                                <a target="_blank" href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" class="sec-btn">START 14 DAY FREE TRIAL NOW</a>
+                                <a target="_blank" href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" onclick="return gtag_report_conversion('https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18');" class="sec-btn">START 14 DAY FREE TRIAL NOW</a>
                                 <p style="font-size:12px; font-style:italic;text-align:center;">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
                             </div>
                         </div>
@@ -116,7 +156,7 @@
                         <h1 class="h1-title wow fadeInUp" data-wow-delay=".7s">Building AFL Players</h1>
                         <p class="wow fadeInUp" data-wow-delay=".9s">Level up your footy with our AFL High Performance app, brought to you by Jack Grimes</p>
                         <div class="d-none d-md-block">   
-                            <a  target="_blank" href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18"  class="sec-btn wow fadeInUp" data-wow-delay="1s">START 14 DAY FREE TRIAL NOW </a>
+                            <a  target="_blank" href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" onclick="return gtag_report_conversion('https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18');"    class="sec-btn wow fadeInUp" data-wow-delay="1s">START 14 DAY FREE TRIAL NOW </a>
                             <p style="font-size:12px; font-style:italic;">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
                         </div>
 
@@ -187,7 +227,7 @@
                                 </div>
                             </div>
                             <div class="d-none d-lg-block">
-                                <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18 " class="sec-btn w-100">START 14 DAY FREE TRIAL NOW</a>   
+                                <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18 " onclick="return gtag_report_conversion('https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18');" class="sec-btn w-100">START 14 DAY FREE TRIAL NOW</a>   
                                 <p class="trialText">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
                             </div>                     
             
@@ -196,7 +236,7 @@
             </div>
             <div class="row mt-2  d-sm-block d-md-none ">
                 <div>
-                    <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18 " class="sec-btn w-100">START 14 DAY FREE TRIAL NOW</a>   
+                    <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18 " onclick="return gtag_report_conversion('https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18');" class="sec-btn w-100">START 14 DAY FREE TRIAL NOW</a>   
                     <p class="trialText">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
                 </div>   
             </div>
@@ -273,7 +313,7 @@
 
                 </div>
                 <div class="col-12 text-center bg-accent-sm">
-                    <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" class="sec-btn w-100">START 14 DAY FREE TRIAL NOW</a>
+                    <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" onclick="return gtag_report_conversion('https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18');" class="sec-btn w-100">START 14 DAY FREE TRIAL NOW</a>
                     <p style="font-size:12px; font-style:italic;text-align: center;">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
 
                 </div>
@@ -618,7 +658,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" class="sec-btn">START 14 DAY FREE TRIAL NOW</a>
+                            <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" onclick="return gtag_report_conversion('https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18');" class="sec-btn">START 14 DAY FREE TRIAL NOW</a>
                             <p style="font-size:12px; font-style:italic;text-align: center;">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
 
                         </div>
@@ -659,7 +699,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" class="sec-btn mt-lg-15">START 14 DAY FREE TRIAL NOW</a>
+                            <a href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" onclick="return gtag_report_conversion('https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18');" class="sec-btn mt-lg-15">START 14 DAY FREE TRIAL NOW</a>
                             <p style="font-size:12px; font-style:italic;text-align: center;">Enter discount code <span style="font-weight: bold;;">JJSTRIAL</span></p>
 
                         </div>
@@ -1116,7 +1156,7 @@
             <p style="color:white;overflow-wrap: break-word;font-size:16px;line-height:1.4; margin-top:10px;">Enter discount code <span style="font-weight: bold; font-size:18px;">JJSTRIAL</span></p>
         </div>
         <div style="width:50%;display:flex;justify-content:center;">
-            <a target="_blank" href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" class="footer-btn" >START FREE TRIAL</a>
+            <a target="_blank" href="https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18" onclick="return gtag_report_conversion('https://www.trainerize.me/profile/jjshealthandfitness/?planGUID=5d65f5cd64274d8a80b5ec6123964b18');" class="footer-btn" >START FREE TRIAL</a>
         </div>
      </div>
     
