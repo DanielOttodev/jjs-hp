@@ -1391,6 +1391,9 @@ p {
 /*==========Header CSS End==========*/
 
 /*==========Banner CSS Start==========*/
+.content-list{
+  text-align: start;
+}
 .main-banner {
   background-color: #141b22;
   position: relative;
@@ -1423,6 +1426,9 @@ p {
   }
   .landing{
     padding-top:30px;
+  }
+  .content-list{
+    font-size: 16px;
   }
 }
 
