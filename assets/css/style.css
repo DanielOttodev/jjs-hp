@@ -1398,6 +1398,13 @@ p {
   width: 100%;
   z-index: 0;
 }
+.landing {
+  background-color: #141b22;
+  padding-top: 180px;
+  width: 100%;
+  z-index: 0;
+  padding-bottom:50px;
+}
 #counter{
   background-color: #141b22;
   color:white !important; 
@@ -1413,6 +1420,9 @@ p {
   }
   .st{
     font-size:14px;
+  }
+  .landing{
+    padding-top:30px;
   }
 }
 
