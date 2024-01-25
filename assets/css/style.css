@@ -1401,12 +1401,10 @@ p {
   width: 100%;
   z-index: 0;
 }
-#pdfform{
-  margin-top:-75px;
-}
+
 .landing {
   background-color: #141b22;
-  padding-top: 100px;
+  padding-top: 150px;
   width: 100%;
   z-index: 0;
   padding-bottom:50px;
@@ -1433,9 +1431,7 @@ p {
   .content-list{
     font-size: 16px;
   }
-  #pdfform{
-    margin-top: -25px;
-  }
+
 }
 
 
