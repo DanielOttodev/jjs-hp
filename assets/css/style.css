@@ -1397,7 +1397,7 @@ p {
 .main-banner {
   background-color: #141b22;
   position: relative;
-  padding-top: 180px;
+  padding-top: 50px;
   width: 100%;
   z-index: 0;
 }
