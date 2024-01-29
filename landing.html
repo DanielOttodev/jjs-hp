@@ -178,7 +178,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <form id="pdfform" netlify name="hp-landing" method="post" action="/pages/freepdf.html" >
+                    <form id="pdfform" netlify name="hp-landing" method="post" >
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-box">
@@ -1253,6 +1253,26 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         console.log(e);
         e.target.style.color = "#131830";
     })
+</script>
+<script>
+    const handleSubmit = (event) => {
+        event.preventDefault();
+      
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+        
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => window.location = '/freepdf.html')
+          .catch((error) => alert(error));
+      };
+      
+      document
+        .querySelector("form")
+        .addEventListener("submit", handleSubmit);
 </script>
 </body>
 </html>
