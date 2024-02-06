@@ -1401,15 +1401,6 @@ p {
   width: 100%;
   z-index: 0;
 }
-.landing2{
-  background-color: #fff;
-  padding-top: 200px;
-  width: 100%;
-  z-index: 0;
-  padding-bottom:50px;
-  padding-right:150px;
-  padding-left:150px;
-}
 
 .landing {
   background-color: #141b22;
@@ -1419,19 +1410,12 @@ p {
   padding-bottom:50px;
 }
 #counter{
-
-  color:white !important; 
-}
-#counter2{
   background-color: #141b22;
   color:white !important; 
+
 }
 .st{
   font-size:28px;
-}
-.list-inside{
-  list-style-position:inside;
-  text-align: center;
 }
 
 @media screen and (max-width:575px) {
@@ -1447,16 +1431,10 @@ p {
   .content-list{
     font-size: 16px;
   }
-  .landing2{
-    padding-top:30px !important;
-    padding-left: 10px !important;
-    padding-right:10px !important;
-  }
+
 }
 
-hr{
-  height:3px !important;
-}
+
 
 .main-banner::before {
   content: "";
@@ -6160,11 +6138,7 @@ hr{
   animation: none;
   transition: 0.3s;
 }
-.landing2{
-  padding-top:30px;
-  padding-left:20px;
-  padding-right:20px;
-}
+
 .site-branding {
  /* position: fixed;
   top: 0;
