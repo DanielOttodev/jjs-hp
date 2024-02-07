@@ -6896,7 +6896,9 @@ hr{
   font-size: 40px;
   line-height: 50px;
 }
-
+#main-landing{
+  margin-top:-80px;
+}
 .copyright-links {
   display: flex;
   align-items: center;
