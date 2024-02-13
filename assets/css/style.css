@@ -1403,7 +1403,7 @@ p {
 }
 .landing2{
   background-color: #fff;
-  padding-top: 200px;
+  padding-top: 50px;
   width: 100%;
   z-index: 0;
   padding-bottom:50px;
@@ -1449,8 +1449,8 @@ p {
   }
   .landing2{
     padding-top:30px !important;
-    padding-left: 10px !important;
-    padding-right:10px !important;
+    padding-left: 40px !important;
+    padding-right:40px !important;
   }
 }
 
