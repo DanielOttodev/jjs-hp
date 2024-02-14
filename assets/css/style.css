@@ -356,7 +356,10 @@ Responsive CSS
   }
 
 }
-
+.fiftyOff{
+font-weight:bold;
+font-size:16px;
+}
 /*==========Fonts CSS Start==========*/
 @font-face {
     font-family: 'FontAwesome';
@@ -1437,7 +1440,7 @@ p {
 
 @media screen and (max-width:575px) {
   .main-banner{
-    padding-top: 30px;
+    padding-top: 0px;
   }
   .st{
     font-size:14px;
