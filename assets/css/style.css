@@ -356,7 +356,10 @@ Responsive CSS
   }
 
 }
-
+.fiftyOff{
+font-weight:bold;
+font-size:16px;
+}
 /*==========Fonts CSS Start==========*/
 @font-face {
     font-family: 'FontAwesome';
@@ -1403,7 +1406,7 @@ p {
 }
 .landing2{
   background-color: #fff;
-  padding-top: 200px;
+  padding-top: 50px;
   width: 100%;
   z-index: 0;
   padding-bottom:50px;
@@ -1417,6 +1420,7 @@ p {
   width: 100%;
   z-index: 0;
   padding-bottom:50px;
+  position: relative;
 }
 #counter{
   background-color: #141b22;
@@ -1436,7 +1440,7 @@ p {
 
 @media screen and (max-width:575px) {
   .main-banner{
-    padding-top: 30px;
+    padding-top: 0px;
   }
   .st{
     font-size:14px;
@@ -1449,8 +1453,8 @@ p {
   }
   .landing2{
     padding-top:30px !important;
-    padding-left: 10px !important;
-    padding-right:10px !important;
+    padding-left: 40px !important;
+    padding-right:40px !important;
   }
 }
 
