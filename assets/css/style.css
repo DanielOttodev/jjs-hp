@@ -1847,6 +1847,7 @@ hr{
 }
 
 .banner-blur-bg {
+  z-index:0;
   position: absolute;
   top: -790px;
   left: -540px;
