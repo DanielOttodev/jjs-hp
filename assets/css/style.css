@@ -1850,7 +1850,7 @@ hr{
   z-index:0;
   position: absolute;
   top: -790px;
-  left: -540px;
+  left: -1040px;
   animation-name: zoom-fade;
   animation-duration: 4s;
   animation-iteration-count: infinite;
