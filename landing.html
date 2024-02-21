@@ -191,7 +191,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </div>
                     <div class="col-md-12">
                         <div class="form-box">
-                            <input type="text" name="Phone" class="form-input" placeholder="Phone Number" required="required">
+                            <input id="phoneInput" type="text" name="Phone" class="form-input" placeholder="Phone Number (+61)" required="required">
                         </div>
                     </div>
                     <div class="col-12">
@@ -1308,7 +1308,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
 <!--Progress Bar JS
 <script src="assets/js/custom-progress-bar.js"></script>  -->
+<script>
+    const phone = document.getElementById('phoneInput');
+    phone.addEventListener('keydown',(e) => {
+        if(!phone.value.includes('+')){
+            phone.value = `+61${e.target.value}`;
+        }else{
+            phone.value = e.target.value;
+        }
+       
+    })
 
+</script>
 <!--Scroll Count JS-->
 <script src="assets/js/custom-scroll-count.js"></script>
 
