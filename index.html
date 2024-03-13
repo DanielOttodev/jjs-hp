@@ -25,6 +25,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.min.css">
     <!-- Main Style CSS  -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0K16XETEX"></script>
@@ -177,7 +182,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
         </div>
         <div class="w-75 mx-auto" style="z-index:99;" >
-            <form netlify name="landing" method="post" action="/free-ebook">
+            <form id="pdfsend" netlify name="landing" method="post" action="/free-ebook">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-box">
@@ -189,10 +194,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             <input type="email" name="EmailAddress" class="form-input" placeholder="Email Address" required="required">
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="form-box">
-                            <input id="phoneInput" type="text" name="Phone" class="form-input" placeholder="Phone Number (+61)" required="required">
-                        </div>
+
+                    <div class="col-md-12 mb-3">             
+                            <input id="phone" type="text" name="Phone" class="form-input w-100 ext-black" required="required">
                     </div>
                     <div class="col-12">
                         <div class="form-box mb-0">
@@ -1333,5 +1337,30 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         e.target.style.color = "#131830";
     })
 </script>
+<script>
+
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      preferredCountries:['au','us','gb','nz'],
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    const form = document.getElementById('pdfsend')
+    phoneInputField.addEventListener('keydown',(e) => {
+        console.log(phoneInputField.value)
+        phoneInputField.value = phoneInput.getNumber();
+        console.log(phoneInputField.value)
+
+    })
+    /*
+    form.addEventListener('submit',(e) => {
+        e.preventDefault();
+        console.log(phoneInput.getNumber());
+        console.log(phoneInputField.value)
+        
+    })
+    */
+  </script>
 </body>
 </html>
