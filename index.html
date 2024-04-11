@@ -1337,19 +1337,27 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
     const form = document.getElementById('pdfsend')
     phoneInputField.addEventListener('keydown',(e) => {
-        console.log(phoneInputField.value)
+
         phoneInputField.value = phoneInput.getNumber();
         console.log(phoneInputField.value)
 
     })
-    /*
+
     form.addEventListener('submit',(e) => {
-        e.preventDefault();
-        console.log(phoneInput.getNumber());
-        console.log(phoneInputField.value)
+        if(phoneInputField.value.contains('+61')){
+        if(phoneInputField.value.length < 13){
+            e.preventDefault();
+            console.log(phoneInputField.value)
+            alert("Please enter a valid phone number")
+        }
+        else{
+            phoneInputField.value = phoneInput.getNumber();
+            console.log(phoneInputField.value)
+        }
+    }
         
     })
-    */
+    
   </script>
 </body>
 </html>
