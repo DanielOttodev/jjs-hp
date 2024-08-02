@@ -580,7 +580,7 @@ p {
 }
 
 .slick-dots {
-    bottom: -50px;
+    bottom: 0px;
     font-size: 0;
     line-height: 1;
 }

@@ -24,12 +24,9 @@
 {
     font-size: 0;
     line-height: 0;
-
     position: absolute;
     top: 50%;
-
     display: block;
-
     width: 20px;
     height: 20px;
     padding: 0;
@@ -119,13 +116,13 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+  /*  margin-bottom: 30px; */
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+  /*  bottom: -25px; */
 
     display: block;
 
