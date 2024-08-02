@@ -152,6 +152,7 @@ Responsive CSS
   .stickyFooter{
     max-width:100vw;
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 8px 8px 14px;
     color: rgb(255, 255, 255);
@@ -162,6 +163,7 @@ Responsive CSS
     bottom: 0px;
     z-index: 10;
     opacity: 1;
+    margin:auto;
     transition: bottom 0.5s ease-out 0s, opacity 0.5s ease 0s;
   }
 }
