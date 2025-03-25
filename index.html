@@ -2196,7 +2196,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     })
 
     enquiryForm.addEventListener('submit',(e) => {
+        console.log(fullNameEnquiry.value)
+        console.log(subjectEnquiry.value)
         subjectEnquiry.value = "JJ's High Performance Enquiry: " + fullNameEnquiry.value        
+        console.log(subjectEnquiry.value)
+
     })
 
     form.addEventListener('submit',(e) => {
