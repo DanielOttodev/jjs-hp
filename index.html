@@ -1901,8 +1901,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                     style="margin-top:10px;margin-bottom:10px;">Fill
                                     in the form below and we'll be in
                                     contact</p>
-                                <form netlify name="hp-form2" method="post" id="hp-form2">
+                                <form netlify data-netlify="true" name="hp-form2" method="post" id="hp-form2">
                                     <input type="hidden" name="subject" id="subject"
+                                    value="JJ's High Performance Enquiry: " />
+                                    <input type="text" name="subject" id="subject"
                                     value="JJ's High Performance Enquiry: " />
                                     <div class="row">
                                         <div class="col-md-12">
