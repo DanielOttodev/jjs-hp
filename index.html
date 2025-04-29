@@ -210,10 +210,13 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="w-75 mx-auto" style="z-index:99;">
                 <form id="pdfsend" netlify name="landing" method="post"
                     action="/free-ebook">
+                    <input type="hidden" name="subject" id="pdfSubject"
+                    value="JJ's High Performance Free E-Book:" />
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-box">
                                 <input type="text" name="FullName"
+                                id="pdfName"
                                     class="form-input" placeholder="Full Name"
                                     required="required">
                             </div>
@@ -1898,7 +1901,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                     style="margin-top:10px;margin-bottom:10px;">Fill
                                     in the form below and we'll be in
                                     contact</p>
-                                <form netlify name="hp-form2" method="post">
+                                <form netlify data-netlify="true" name="hp-form2" method="post" id="hp-form2">
+                                    <input type="hidden" name="subject" id="subject"
+                                    value="JJ's High Performance Enquiry: " />
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-box">
@@ -1906,6 +1911,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                                     name="FullName"
                                                     class="form-input"
                                                     placeholder="Full Name"
+                                                    id="name"                                            
                                                     required="required">
                                             </div>
                                         </div>
@@ -2176,6 +2182,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     });
 
     const form = document.getElementById('pdfsend')
+    const subjectLanding = document.getElementById('pdfSubject')
+    const fullNameLanding = document.getElementById('pdfName')
+
+    const enquiryForm = document.getElementById('hp-form2')
+    const subjectEnquiry = document.getElementById('subject')
+    const fullNameEnquiry = document.getElementById('name')
     phoneInputField.addEventListener('keydown',(e) => {
 
         phoneInputField.value = phoneInput.getNumber();
@@ -2183,7 +2195,17 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
     })
 
+    enquiryForm.addEventListener('submit',(e) => {
+        console.log(fullNameEnquiry.value)
+        console.log(subjectEnquiry.value)
+        subjectEnquiry.value = "JJ's High Performance Enquiry: " + fullNameEnquiry.value        
+        console.log(subjectEnquiry.value)
+
+    })
+
     form.addEventListener('submit',(e) => {
+
+        subjectLanding.value = "JJ's High Performance Free E-Book: " + fullNameLanding.value
         if(phoneInputField.value.contains('+61')){
         if(phoneInputField.value.length < 13){
             e.preventDefault();
@@ -2197,6 +2219,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     }
         
     })
+
     
   </script>
     </body>
