@@ -30,6 +30,29 @@ border-top:grey 1px solid;
     height:auto;
 }
 
-.quick-links img:hover{
-    cursor: pointer;
+#quick-links img:hover{
+    border:#D7DE26 2px solid;
+    border-radius:40px;
+    
+}
+
+.social-icon:hover{
+    color: #D7DE26;
+    border-color: #D7DE26;
+   
+}
+.social-link:hover{
+    background-color: rgba(73, 73, 73, 0.164);
+}
+.social-link{
+    width:80px;
+}
+
+.site-header.sticky-header {
+    background-color: #313131cb;
+    box-shadow: 6px 6px 60px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.sec-btn{
+    color:black !important; 
 }
