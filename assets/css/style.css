@@ -1410,7 +1410,7 @@ p {
   text-align: start;
 }
 .main-banner {
-  background-color: #141b22;
+  background-color: #000000 ;
   position: relative;
   padding-top: 150px;
   width: 100%;
@@ -3863,7 +3863,9 @@ hr{
 .footer-copyright {
   background-color: rgb(40, 40, 40);
   z-index: 0;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  width:100%;
   padding: 15px 0;
 }
 #main-wrapper{
