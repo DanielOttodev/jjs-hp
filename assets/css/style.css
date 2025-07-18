@@ -156,7 +156,8 @@ Responsive CSS
     align-items: center;
     padding: 8px 8px 14px;
     color: rgb(255, 255, 255);
-    background-color: rgb(46, 44, 44);
+    background-color: #000000;
+    border-top:1px solid rgba(255, 255, 255, 0.205);
     position: fixed;
     left: 0px;
     right: 0px;
@@ -1338,7 +1339,7 @@ p {
 }
 
 .site-header.sticky-header {
-    background-color: #282828;
+    background-color: #000000;
     box-shadow: 6px 6px 60px 0px rgba(0,0,0,0.1);
     transition: 0.3s
 }
@@ -6159,7 +6160,7 @@ hr{
 
 @media screen and (max-width: 991px) {
 .site-header, .site-header.sticky-header {
-  background: #282828;
+  background: #000000;
   height: 120px;
   padding: 0;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
