@@ -336,10 +336,10 @@ Responsive CSS
 }
 
 .logo{
-  max-width:120px;
-  height:auto;
-  margin-top:20px;
-  margin-bottom:20px;
+  max-width: 500px;
+  max-height:100px;
+  margin-top:10px;
+  margin-bottom:10px;
 } 
 @media only screen and (max-width: 991px){
   .logo{
@@ -1341,7 +1341,7 @@ p {
 }
 
 .sticky-header .header-bottom {
-    padding: 20px 0px;
+    padding:  0px;
     animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
     transition: 0.3s;
 }
