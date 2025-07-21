@@ -59,3 +59,8 @@ border-top:grey 1px solid;
 .quick-links{
     font-size:12px;
 }
+
+p{
+    font-size:17px;
+    color:white !important;
+}

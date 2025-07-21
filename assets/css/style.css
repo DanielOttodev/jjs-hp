@@ -337,7 +337,7 @@ Responsive CSS
 
 .logo{
   max-width: 500px;
-  max-height:100px;
+  max-height:250px;
   margin-top:10px;
   margin-bottom:10px;
 } 
@@ -6185,7 +6185,7 @@ hr{
  /* position: fixed;
   top: 0;
   left: 30px; */
-  width: 70px;
+  width:270px;
   height: auto;
   display: flex;
   align-items: center;
