@@ -931,9 +931,8 @@ p {
     width: 100%;
     z-index: 100;
     transition: 0.3s;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
+    background-color: #000000;
 
 }
 
@@ -1478,7 +1477,7 @@ hr{
   height: 100%;
   top: 0;
   right: 0;
-  background-color: var(--primary);
+  background-color: #000000;
 }
 
 .main-banner-subtitle-box {
