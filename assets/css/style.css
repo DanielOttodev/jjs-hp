@@ -933,9 +933,9 @@ p {
 /*==========Header CSS Start==========*/
 .site-header {
     width: 100%;
-
     transition: 0.3s;
     position: relative;
+    z-index:0;
     background-color: #000000;
 
 }
@@ -6163,7 +6163,7 @@ hr{
   padding: 0;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
   transition: none;
-  position: initial !important;
+  position: initial !important; 
  /* top: 0;
   left: 0; */
 }

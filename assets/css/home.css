@@ -83,7 +83,7 @@ p{
 .modal-content{
     border: #D7DE26 solid 1px;
     z-index:10;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95)
 
 }
 
@@ -95,4 +95,8 @@ p{
 }
 .form-box{
     border:1px solid #000000;
+}
+
+#circle2{
+    transform: scale(0.8);
 }
