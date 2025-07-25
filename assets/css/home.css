@@ -64,3 +64,35 @@ p{
     font-size:17px;
     color:white !important;
 }
+
+#hp-form2{
+    margin: auto;
+    margin-bottom: 30px;
+    max-width:500px;
+    padding:25px;
+    border-radius: 5px;
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+
+#exampleModal{
+    z-index:999;
+}
+.modal-content{
+    border: #D7DE26 solid 1px;
+    z-index:10;
+    background-color: white;
+
+}
+
+.sec-btn{
+    background-color:#D7DE26 !important;
+}
+.sec-btn:hover{
+    color:white !important;
+}
+.form-box{
+    border:1px solid #000000;
+}

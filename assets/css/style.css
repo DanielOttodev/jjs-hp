@@ -933,7 +933,7 @@ p {
 /*==========Header CSS Start==========*/
 .site-header {
     width: 100%;
-    z-index: 100;
+
     transition: 0.3s;
     position: relative;
     background-color: #000000;
@@ -1412,7 +1412,6 @@ p {
 .main-banner {
   background-color: #000000 ;
   position: relative;
-  padding-top: 150px;
   width: 100%;
   z-index: 0;
 }
