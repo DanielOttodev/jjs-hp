@@ -81,7 +81,6 @@ p{
     z-index:999;
 }
 .modal-content{
-    border: #D7DE26 solid 1px;
     z-index:10;
     background-color: rgba(255, 255, 255, 0.95)
 
@@ -89,6 +88,7 @@ p{
 
 .sec-btn{
     background-color:#D7DE26 !important;
+    border:none;
 }
 .sec-btn:hover{
     color:white !important;
@@ -99,4 +99,11 @@ p{
 
 #circle2{
     transform: scale(0.8);
+}
+.modal-header{
+    border:none;
+}
+
+#exampleModalLabel{
+    font-size:24px;
 }
