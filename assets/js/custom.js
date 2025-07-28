@@ -34,7 +34,7 @@ $(document).ready(function ($) {
 	// Wow Animation JS Start
 	new WOW().init();
 	// Wow Animation JS Start
-
+/*
 	// Sticky Header JS Start
 	$(window).on('scroll', function () {
 		if ($(window).scrollTop() >= 100) {
@@ -44,6 +44,7 @@ $(document).ready(function ($) {
 			$('.site-header').removeClass('sticky-header');
 		}
 	});
+	*/
 	// Sticky Header JS End
 
 	// Search JS Start
