@@ -107,3 +107,8 @@ p{
 #exampleModalLabel{
     font-size:24px;
 }
+
+#modalBtn{
+    background-color:black;
+    color:white;
+}
